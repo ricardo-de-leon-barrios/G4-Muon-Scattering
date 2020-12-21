@@ -12,7 +12,6 @@
 //
 #include "DetectorConstruction.hh"
 #include "PMTSD.hh"
-#include "CerenkovValidation.hh"
 
 
 // C++ Libraries
@@ -38,10 +37,6 @@ class SteppingAction : public G4UserSteppingAction
 
   private:
 
-    // For Cerenkov validation
-    //
-//    CerenkovValidation* cerValid;
-//    CerenkovValidation* validating;
     const DetectorConstruction *detectorConstruction;
     G4VPhysicalVolume* fwaterVolume;
     G4int fScintillationCounter;

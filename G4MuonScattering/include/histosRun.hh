@@ -21,7 +21,7 @@ class TH2D;
 
 // Local Libraries
 //
-
+#include "histosMessenger.hh"
 
 
 class histosRun
@@ -53,6 +53,7 @@ class histosRun
     // *** inside detector ***
     void trackLengthDetec(int optLengthDectec, double length);
     void fillTrackLengthDetec(int optFillLengthDectec);
+    void setOutFileName(G4String name);
 
     // ================
     // *** Injected ***
@@ -61,6 +62,9 @@ class histosRun
 
 
   private:
+
+    G4String test;
+    histosMessenger* histoRunMess;
 
     // ===================
     // *** Output File ***

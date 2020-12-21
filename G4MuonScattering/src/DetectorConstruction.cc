@@ -119,23 +119,7 @@ G4VPhysicalVolume* DetectorConstruction::ConstructDetector()
 
 void DetectorConstruction::setWcdRadius( G4double wcdR )
 {
-//  this->wcdRadius = wcdR;
-
- // wcdCont->getLogVolume()->RemoveDaughter(wcdCont->getPhysVolume());
-//  delete wcdCont->getPhysVolume();
-//  wcdCont->buildDetector(groundBase->getLogVolume(), &checkOverlaps, wcdRadius, wcdHight);
-
-//  wcdCalo->getLogVolume()->RemoveDaughter(wcdCalo->getPhysVolume());
-//  delete wcdCalo->getPhysVolume();
-//  wcdCalo->buildDetector(wcdCont->getLogVolume(), wcdCont->getPhysVolume(), &checkOverlaps, wcdRadius, wcdHight);
-
-//  pmt_det->getLogVolume()->RemoveDaughter(pmt_det->getPhysVolume());
- // delete pmt_det->getPhysVolume();
- // pmt_det->buildDetector(wcdCalo->getLogVolume(), wcdHight, &checkOverlaps);
-
- // fwaterVolume = wcdCalo->getPhysVolume();
-
-  grd->getLogVolume()->RemoveDaughter(grd->getPhysVolume());
+   grd->getLogVolume()->RemoveDaughter(grd->getPhysVolume());
   delete grd->getPhysVolume();
   grd->buildDetector(wcdHight, groundBase->getLogVolume(), &checkOverlaps);
 

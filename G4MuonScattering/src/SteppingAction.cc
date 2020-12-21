@@ -22,7 +22,6 @@
 #include "SteppingAction.hh"
 #include "DetectorConstruction.hh"
 #include "PMTSD.hh"
-#include "CerenkovValidation.hh"
 #include "EventAction.hh"
 #include "PrimaryGeneratorAction.hh"
 
@@ -41,7 +40,6 @@ SteppingAction::SteppingAction(EventAction* eventAction)
   fEventNumber = -1;
   initEner = 0.;
   pmtSD = new PMTSD;
- // cerValid = new CerenkovValidation;
 
   
   detectorConstruction 
